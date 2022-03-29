@@ -1,6 +1,12 @@
 import random
 # 都有空格 why
-r = random.randint(1, 100)
+user_min = input('請決定隨機數字範圍開始值：') # 預計給使用者決定隨機數字的範圍
+user_max = input('請決定隨機數字範圍結束值：')
+# start / end (whatever)
+user_min = int(user_min)
+user_max = int(user_max)
+
+r = random.randint(user_min, user_max)
 count = 0 #要用一個計數基礎
 while True:
 	# 且count = 0 不能寫在while內，因為每重複一次就等於把計數歸零
